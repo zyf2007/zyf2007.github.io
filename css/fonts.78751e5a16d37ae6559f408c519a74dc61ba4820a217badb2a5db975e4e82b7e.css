@@ -1,0 +1,18 @@
+
+@font-face {
+  font-display: swap;
+  font-family: 'Silver';
+  font-style: normal;
+  font-weight: 400;
+  src:  
+       url('https://cdn.jsdelivr.net/gh/zyf2007/WebImages/imgs/Silver.woff2') format('woff2'),
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Code';
+  font-style: normal;
+  font-weight: 400;
+  src:  
+       url('https://cdn.jsdelivr.net/gh/zyf2007/WebImages/imgs/CascadiaMono.woff2') format('woff2'),
+}
+

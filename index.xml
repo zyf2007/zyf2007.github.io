@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ゲーム開発部</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on ゲーム開発部</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Hutao_zyf</copyright>
+    <lastBuildDate>Sun, 15 Sep 2024 10:41:34 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>这是测试Post</title>
+      <link>http://localhost:1313/post/test/</link>
+      <pubDate>Sun, 15 Sep 2024 10:41:34 +0800</pubDate>
+      <guid>http://localhost:1313/post/test/</guid>
+      <description>&lt;p&gt;好的，没问题！这里提供一份包含 Markdown 所有主要语法的测试文件，并附有详细注释：&lt;/p&gt;&#xA;&lt;h1 id=&#34;markdown-语法测试文件&#34;&gt;Markdown 语法测试文件&lt;/h1&gt;&#xA;&lt;h2 id=&#34;标题&#34;&gt;标题&lt;/h2&gt;&#xA;&lt;h1 id=&#34;一级标题&#34;&gt;一级标题&lt;/h1&gt;&#xA;&lt;h2 id=&#34;二级标题&#34;&gt;二级标题&lt;/h2&gt;&#xA;&lt;h3 id=&#34;三级标题&#34;&gt;三级标题&lt;/h3&gt;&#xA;&lt;h4 id=&#34;四级标题&#34;&gt;四级标题&lt;/h4&gt;&#xA;&lt;h5 id=&#34;五级标题&#34;&gt;五级标题&lt;/h5&gt;&#xA;&lt;h6 id=&#34;六级标题&#34;&gt;六级标题&lt;/h6&gt;&#xA;&lt;h2 id=&#34;段落&#34;&gt;段落&lt;/h2&gt;&#xA;&lt;p&gt;这是普通的一段文字。你可以在这里输入任何你想输入的内容。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/archives/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
