@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ゲーム開発部</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://zyf2007.github.io/tags/</link>
     <description>Recent content in Tags on ゲーム開発部</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Hutao_zyf</copyright>
     <lastBuildDate>Sun, 15 Sep 2024 10:41:34 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zyf2007.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test</title>
-      <link>http://localhost:1313/tags/test/</link>
+      <link>https://zyf2007.github.io/tags/test/</link>
       <pubDate>Sun, 15 Sep 2024 10:41:34 +0800</pubDate>
-      <guid>http://localhost:1313/tags/test/</guid>
+      <guid>https://zyf2007.github.io/tags/test/</guid>
       <description></description>
     </item>
     <item>
       <title>喵</title>
-      <link>http://localhost:1313/tags/%E5%96%B5/</link>
+      <link>https://zyf2007.github.io/tags/%E5%96%B5/</link>
       <pubDate>Sun, 15 Sep 2024 10:41:34 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E5%96%B5/</guid>
+      <guid>https://zyf2007.github.io/tags/%E5%96%B5/</guid>
       <description></description>
     </item>
   </channel>
