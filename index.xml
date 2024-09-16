@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Hutao_zyf</copyright>
-    <lastBuildDate>Sun, 15 Sep 2024 10:41:34 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Sep 2024 11:32:44 +0800</lastBuildDate>
     <atom:link href="https://midori.fun/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://midori.fun/about/</link>
+      <pubDate>Mon, 16 Sep 2024 11:32:44 +0800</pubDate>
+      <guid>https://midori.fun/about/</guid>
+      <description>&lt;p&gt;qwq&lt;/p&gt;</description>
+    </item>
     <item>
       <title>这是测试Post</title>
       <link>https://midori.fun/posts/test/</link>
