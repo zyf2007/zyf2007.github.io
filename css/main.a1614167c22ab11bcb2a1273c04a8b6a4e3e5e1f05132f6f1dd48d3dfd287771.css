@@ -1,0 +1,298 @@
+:root {
+  --maincolor: #F02494;
+  --bordercl: rebeccapurple;
+  --calloutcolor: dodgerblue;
+  --hovercolor: navy;
+  --darkMaincolor: #28F6C7;
+}
+
+html {
+  color: #232333;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
+body {
+  display: block;
+  margin: 8px;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::selection {
+  background: var(--maincolor);
+  color: #fff;
+}
+
+article p {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  text-indent: 2rem;
+}
+
+article blockquote p {
+  text-indent: 0rem;
+}
+
+article ul, ol, dl {
+  margin-left: 1rem;
+}
+
+hr {
+  border: 0;
+  border-top: 3px dotted var(--bordercl);
+  margin: 1em 0;
+}
+
+blockquote {
+  border-left: 3px solid var(--bordercl);
+  color: #737373;
+  margin: 0;
+  padding-left: 1em;
+}
+
+blockquote p {
+  position: relative;
+  transform: translateY(6px);
+}
+
+a {
+  font-family: 'Silver', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1rem;
+  color: inherit;
+  text-decoration: none;
+  text-indent: 0;
+  padding: 5px 2px;
+  display: inline-block;
+  border-bottom: 3px solid var(--maincolor);
+}
+
+a:hover {
+  background-color: var(--hovercolor);
+  color: #fff;
+}
+
+.SiteTitle {
+  font-size: 2.2rem;
+  padding-top: 0;
+}
+
+.title a {
+  padding-top: 13px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 2ch;
+}
+
+li, p, .tldr, .meta, .description, time, td, th {
+  font-family: 'Silver', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  letter-spacing: 0.12px;
+}
+
+.meta {
+  color: #999;
+}
+
+strong {
+  letter-spacing: 1px;
+}
+
+ul > li::before {
+  content: '* ';
+  font-weight: bold;
+}
+
+ul li a {
+  transform: translateY(-2px);
+}
+
+/* Images */
+img {
+  border: 3px solid #ececec;
+  max-width: 100%;
+}
+
+.title-img {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 5px;
+}
+
+figure {
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+}
+
+figure img {
+  max-height: 500px;
+}
+
+@media screen and (min-width: 600px) {
+  figure {
+    padding: 0 40px;
+  }
+}
+
+figure h4 {
+  font-size: 1.2rem;
+  margin: 0 0 1em;
+}
+
+figure h4::before {
+  content: '↳ ';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Silver', sans-serif;
+  margin-top: 2.4rem;
+  margin-bottom: 0.1rem;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+}
+
+h1::before { content: '# '; color: var(--maincolor); font-size: 2.4rem; }
+h2::before { content: '## '; color: var(--maincolor); }
+h3::before { content: '### '; color: var(--maincolor); }
+h4::before { content: '#### '; color: var(--maincolor); }
+h5::before { content: '##### '; color: var(--maincolor); }
+h6::before { content: '###### '; color: var(--maincolor); }
+
+/* Code blocks */
+code {
+  background-color: #ececec;
+  padding: 0.1em 0.2em;
+  font-family: 'Code', sans-serif;
+  font-size: 1rem;
+}
+
+pre {
+  background-color: #ececec;
+  line-height: 1.4;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+.highlight pre ::selection {
+  background: rgba(255, 255, 255, 0.2);
+  color: inherit;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1em 0;
+  line-height: 2.5em;
+}
+
+header .main {
+  font-size: 1.5rem;
+}
+
+.description h1 {
+  font-size: 2rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  border-top: 0.4rem dotted var(--bordercl);
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.soc {
+  display: flex;
+  align-items: center;
+}
+
+.footer-info {
+  font-family: 'Silver', sans-serif;
+  font-size: 1.5rem;
+  padding: var(--footer-padding);
+  transform: translateY(4px);
+}
+
+/* Callout */
+.callout {
+  background-color: var(--calloutcolor);
+  color: #fff;
+  padding: 1em;
+}
+
+.callout p {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.callout a {
+  border-bottom: 3px solid #fff;
+}
+
+.callout a:hover {
+  background-color: #fff;
+  color: var(--calloutcolor);
+}
+
+/* Code language labels */
+.highlight pre code[class*='language-']::before {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 12px;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  background: black;
+  color: white;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.highlight pre code[class='language-css']::before { content: 'css'; background: cyan; color: black; }
+.highlight pre code[class='language-json']::before { content: 'json'; background: dodgerblue; color: black; }
+.highlight pre code[class='language-python']::before { content: 'py'; background: blue; color: yellow; }
+
+/* Tables */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+table th {
+  font-size: 2rem;
+}

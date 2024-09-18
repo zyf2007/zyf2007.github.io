@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Audio on ゲーム開発部</title>
+    <link>https://midori.fun/tags/audio/</link>
+    <description>Recent content in Audio on ゲーム開発部</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Hutao_zyf</copyright>
+    <lastBuildDate>Wed, 18 Sep 2024 21:09:46 +0800</lastBuildDate>
+    <atom:link href="https://midori.fun/tags/audio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 Arch Linux 中修改外置声卡的采样率 (Pipewire)</title>
+      <link>https://midori.fun/posts/arch_sample_rate/</link>
+      <pubDate>Wed, 18 Sep 2024 21:09:46 +0800</pubDate>
+      <guid>https://midori.fun/posts/arch_sample_rate/</guid>
+      <description>&lt;p&gt;本人的系统 (Arch Linux + KDE6) 目前使用的音频系统是 PipeWire，并通过 WirePlumber 作为会话管理器。PipeWire 也兼容了 PulseAudio 的协议，所以部分应用程序则是通过PulseAudio 兼容层（基于 PipeWire） 处理音频。由于网上搜到的很多Blog都已经过时，导致我在配置时踩了不少坑，学习了大量&lt;a href=&#34;#awa&#34;&gt;Arch Linux 音频系统工作原理&lt;/a&gt;相关知识后才成功配置&amp;hellip;.附上一张小尾巴被修改采样率后的图片:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
