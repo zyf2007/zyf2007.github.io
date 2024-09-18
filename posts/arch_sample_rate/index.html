@@ -75,14 +75,14 @@
 		<nav id="TableOfContents">
   <ul>
     <li><a href="#-解决方案">🚀 解决方案</a></li>
-    <li><a href="#div-id--awa-arch-linux-音频系统工作原理div"><!-- raw HTML omitted -->🔧 Arch Linux 音频系统工作原理<!-- raw HTML omitted --></a></li>
+    <li><a href="#-arch-linux-音频系统工作原理">🔧 Arch Linux 音频系统工作原理</a></li>
     <li><a href="#-常用音频调试命令">🛠 常用音频调试命令</a></li>
   </ul>
 </nav>
 		</div>
 
 		<section class="body">
-			<p>本人的系统 (Arch Linux + KDE6) 目前使用的音频系统是 PipeWire，并通过 WirePlumber 作为会话管理器。PipeWire 也兼容了 PulseAudio 的协议，所以部分应用程序则是通过PulseAudio 兼容层（基于 PipeWire） 处理音频。由于网上搜到的很多Blog都已经过时，导致我在配置时踩了不少坑，学习了大量<a href="#awa">Arch Linux 音频系统工作原理</a>相关知识后才成功配置&hellip;.附上一张小尾巴被修改采样率后的图片:</p>
+			<p>本人的系统 (Arch Linux + KDE6) 目前使用的音频系统是 PipeWire，并通过 WirePlumber 作为会话管理器。PipeWire 也兼容了 PulseAudio 的协议，所以部分应用程序则是通过PulseAudio 兼容层（基于 PipeWire） 处理音频。由于网上搜到的很多Blog都已经过时，导致我在配置时踩了不少坑，学习了大量<a href="#-arch-linux-%E9%9F%B3%E9%A2%91%E7%B3%BB%E7%BB%9F%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86">Arch Linux 音频系统工作原理</a>相关知识后才成功配置&hellip;.附上一张小尾巴被修改采样率后的图片:</p>
 <figure><img src="https://114514.zroevn.cn/imgs/DAC_Rate.webp"><figcaption>
       <h4>≤48k-黄色 64k～192k-蓝色 352.8k-橙色 如果不修改默认为48k</h4>
     </figcaption>
@@ -135,7 +135,7 @@
 </span></span></code></pre></div><p>可以看到，默认采样率已经被修改为 <code>192000Hz</code>。</p>
 </li>
 </ol>
-<h2 id="div-id--awa-arch-linux-音频系统工作原理div"><!-- raw HTML omitted -->🔧 Arch Linux 音频系统工作原理<!-- raw HTML omitted --></h2>
+<h2 id="-arch-linux-音频系统工作原理">🔧 Arch Linux 音频系统工作原理</h2>
 <p>Arch Linux 目前广泛使用 PipeWire 作为音频服务器，它替代了传统的 PulseAudio 和 JACK，成为一个更通用的音频处理框架。下面我们来简要介绍一下 Arch Linux 音频系统中的各个部分及其调用关系：</p>
 <ol>
 <li>

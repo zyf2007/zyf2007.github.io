@@ -14,7 +14,7 @@
       <link>https://midori.fun/posts/arch_sample_rate/</link>
       <pubDate>Wed, 18 Sep 2024 21:09:46 +0800</pubDate>
       <guid>https://midori.fun/posts/arch_sample_rate/</guid>
-      <description>&lt;p&gt;本人的系统 (Arch Linux + KDE6) 目前使用的音频系统是 PipeWire，并通过 WirePlumber 作为会话管理器。PipeWire 也兼容了 PulseAudio 的协议，所以部分应用程序则是通过PulseAudio 兼容层（基于 PipeWire） 处理音频。由于网上搜到的很多Blog都已经过时，导致我在配置时踩了不少坑，学习了大量&lt;a href=&#34;#awa&#34;&gt;Arch Linux 音频系统工作原理&lt;/a&gt;相关知识后才成功配置&amp;hellip;.附上一张小尾巴被修改采样率后的图片:&lt;/p&gt;</description>
+      <description>&lt;p&gt;本人的系统 (Arch Linux + KDE6) 目前使用的音频系统是 PipeWire，并通过 WirePlumber 作为会话管理器。PipeWire 也兼容了 PulseAudio 的协议，所以部分应用程序则是通过PulseAudio 兼容层（基于 PipeWire） 处理音频。由于网上搜到的很多Blog都已经过时，导致我在配置时踩了不少坑，学习了大量&lt;a href=&#34;#-arch-linux-%E9%9F%B3%E9%A2%91%E7%B3%BB%E7%BB%9F%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86&#34;&gt;Arch Linux 音频系统工作原理&lt;/a&gt;相关知识后才成功配置&amp;hellip;.附上一张小尾巴被修改采样率后的图片:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
