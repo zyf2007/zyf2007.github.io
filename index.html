@@ -22,7 +22,7 @@
 
 	
 	<link rel="stylesheet" type="text/css" media="screen" href="https://midori.fun/css/main.057f0126461a7ab451720120dcd1250b654c6e74a78789877c22b37a890ef25a.css" />
-		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://midori.fun/css/dark.d22e2a2879d933a4b781535fc4c4c716e9f9d35ea4986dd0cbabda82effc4bdd.css" media="(prefers-color-scheme: dark)"  />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://midori.fun/css/dark.7cf360374032a93e01933d2a83d33c113735cd21ed32d88e1dae2f9a4e453f4c.css" media="(prefers-color-scheme: dark)"  />
 	
 
 	
@@ -56,8 +56,19 @@
 
 			
 			<main class="list">
-				<div class="site-description"><p>遠く晴れ渡る青空の向こう，暖かい日差しを片手に，キミと一緒にFind My Future，未知の世界へ行こう。</p></div>
-				
+				<div class="site-description"></div><div id="random-quote-container"><p id="random-quote"></p></div>
+  <script>
+  const quotes = ["遠く晴れ渡る青空の向こう，  暖かい日差しを片手に，  キミと一緒にFind My Future，  未知の世界へ行こう。\u003cbr\u003e——「Find My Future」 - EmoCosine/ななひら","少女を夢見て輝く，  「忘れるなこの海は広大なダンスホール，  光る指先照らす行き先，  おまえら行くぞせ一のっ お—！」\u003cbr\u003e——「ういこうせん」 - しぐれうい","少女を夢見て輝く，  ボタンを押したら極楽，  踊れば天国。\u003cbr\u003e——「ういこうせん」 - しぐれうい","未来は果てしない，  誰かの夢の鼓動が高鳴る，  あふれる想いのバトン，  繋いでいこう。\u003cbr\u003e——「Future Parade」 - 虹ヶ咲学園スクールアイドル同好会","夢の虹はいつも胸の中，  僕らを繋いでるから，  ふと振り返れば続く，  刻んだ軌跡夢色。\u003cbr\u003e——「Future Parade」 - 虹ヶ咲学園スクールアイドル同好会","光たどって，  きみと僕らで進もう，  Go for dream何度でも，  夢を…夢を…追いかけていこう。\u003cbr\u003e——「Future Parade」 - 虹ヶ咲学園スクールアイドル同好会","駆け出して 飛び立って，  夜空を游ぐ光のように，  羽ばたいて 高鳴って。\u003cbr\u003e——「星になる(feat. 倚水)」 - tayori","満天の空に埋もれそうな小さな星が瞬く，  懸命なその姿になれたならって思うんだ。\u003cbr\u003e——「星になる(feat. 倚水)」 - tayori","一番光る星が僕の道しるべだ，  彼方まで連れ去って。\u003cbr\u003e——「星になる(feat. 倚水)」 - tayori","听说刷新页面会在这里随机产生歌词！？","世界中に届け未来を照らす 光になるよ私たち，  手と手を繋いで 君と一緒に虹の先へ。\u003cbr\u003e——「Shine In The Sky☆」 - IDOLM@STER ","叶えるの奇跡さえ キラキラにShine In The Sky☆\u003cbr\u003e——「Shine In The Sky☆」 - IDOLM@STER ","まっさらな地図を ギュッと 握りしめたら踏み出そう，  明日のことは わからないけど 止まっていられない。\u003cbr\u003e——「Shine In The Sky☆」 - IDOLM@STER ","春夏秋冬ずっと，  約束 諦めないから，  頑張る！ みんなで「ファイト！」\u003cbr\u003e——「Shine In The Sky☆」 - IDOLM@STER ","元気に歌おう！ 踊ろう！世界中に届け，  未来を照らす 光になるよ私たち！\u003cbr\u003e——「Shine In The Sky☆」 - IDOLM@STER ","手と手を繋いで 君と一緒に虹の先へ，  叶えるの奇跡さえ キラキラにShine In The Sky☆\u003cbr\u003e——「Shine In The Sky☆」 - IDOLM@STER ","キミとだったら，  迷子だって悪くはないね，  正解も輝きもひとつじゃないから。\u003cbr\u003e——「VIVID WORLD」 - 久保田未夢 ","未来のイントロ，  奇跡みたいだね，  どこまでもほら行こう。\u003cbr\u003e——「イントロダクション」 - Poppin'Party ","いつでもほらどこでも何度でも，  そう私たちのステージになる。\u003cbr\u003e——「イントロダクション」 - Poppin'Party ","単純な日々がキラキラ，  これからもずっと変わらず，  騒がしい毎日を，  紧紧地拥抱在怀中啊​。\u003cbr\u003e——「イントロダクション」 - Poppin'Party ","騒がしい毎日を  大好きな君を，  出会えた奇跡を  抱きしめていたいん。\u003cbr\u003e——「イントロダクション」 - Poppin'Party "];
+  document.addEventListener("DOMContentLoaded", () => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const randomQuote = quotes[randomIndex];
+    const quoteElement = document.getElementById("random-quote");
+    if (quoteElement) {
+      quoteElement.innerHTML = randomQuote; 
+    }
+  });
+  </script>
+  
 				
 				
 				<section class="list-item">
