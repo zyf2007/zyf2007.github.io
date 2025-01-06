@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Hutao_zyf</copyright>
-    <lastBuildDate>Wed, 18 Sep 2024 21:09:46 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jan 2025 20:38:44 +0800</lastBuildDate>
     <atom:link href="https://midori.fun/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unity Hub无法登录的一种可能的解决办法</title>
+      <link>https://midori.fun/posts/unity_hub_login/</link>
+      <pubDate>Mon, 06 Jan 2025 20:38:44 +0800</pubDate>
+      <guid>https://midori.fun/posts/unity_hub_login/</guid>
+      <description>&lt;h2 id=&#34;症状&#34;&gt;症状&lt;/h2&gt;&#xA;&lt;p&gt;在Unity Hub登录界面按下“Sign in”按钮后，浏览器被唤起，进入“Launching Unity Hub”界面，然后Unity Hub被唤起，但没有动静（还是停留在Welcome to Unity Hub界面）。&#xA;观察日志文件&lt;code&gt;~/.config/unityhub/logs/info-log.json&lt;/code&gt;只能看到&lt;/p&gt;</description>
+    </item>
     <item>
       <title>在 Arch Linux 中修改外置声卡的采样率 (Pipewire)</title>
       <link>https://midori.fun/posts/arch_sample_rate/</link>

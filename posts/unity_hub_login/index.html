@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Unity Hub无法登录的一种可能的解决办法 - ゲーム開発部</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Unity Hub 3.10.0 (Linux) 下无法通过浏览器登录Unity Hub的一种可能的解决办法" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="https://midori.fun/posts/unity_hub_login/">
+  <meta property="og:site_name" content="ゲーム開発部">
+  <meta property="og:title" content="Unity Hub无法登录的一种可能的解决办法">
+  <meta property="og:description" content="Unity Hub 3.10.0 (Linux) 下无法通过浏览器登录Unity Hub的一种可能的解决办法">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-06T20:38:44+08:00">
+    <meta property="article:modified_time" content="2025-01-06T20:38:44+08:00">
+    <meta property="article:tag" content="Unity">
+    <meta property="article:tag" content="游戏开发">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Unity Hub无法登录的一种可能的解决办法">
+  <meta name="twitter:description" content="Unity Hub 3.10.0 (Linux) 下无法通过浏览器登录Unity Hub的一种可能的解决办法">
+
+	
+        <link href="https://midori.fun/css/fonts.c5d2d9e5102c1c9fb477a59954accb5a3650ec43787d39cb9f5c826cdcfd5c74.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://midori.fun/css/main.057f0126461a7ab451720120dcd1250b654c6e74a78789877c22b37a890ef25a.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://midori.fun/css/dark.7cf360374032a93e01933d2a83d33c113735cd21ed32d88e1dae2f9a4e453f4c.css" media="(prefers-color-scheme: dark)"  />
+	
+
+	
+	
+
+	
+	
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://midori.fun/" class="SiteTitle"><img src="https://114514.zroevn.cn/imgs/GameDevIconSmall-1.webp" width="28" height="28" class="title-img"/>  ゲーム開発部 (⸝⸝ ＞ヮ＜） ！</a>
+	</div>
+	<nav>
+		
+		<a href="/" class="TopMenu">Home</a>&nbsp;
+		
+		<a href="/posts" class="TopMenu">All posts</a>&nbsp;
+		
+		<a href="/about" class="TopMenu">About</a>&nbsp;
+		
+		<a href="/tags" class="TopMenu">Tags</a>&nbsp;
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Unity Hub无法登录的一种可能的解决办法</h1>
+			<div class="meta">Posted on Jan 6, 2025</div>
+		</div>
+		
+
+		
+		<div class="toc">
+		<strong>Table of contents:</strong>
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#症状">症状</a></li>
+    <li><a href="#解决办法">解决办法</a></li>
+  </ul>
+</nav>
+		</div>
+
+		<section class="body">
+			<h2 id="症状">症状</h2>
+<p>在Unity Hub登录界面按下“Sign in”按钮后，浏览器被唤起，进入“Launching Unity Hub”界面，然后Unity Hub被唤起，但没有动静（还是停留在Welcome to Unity Hub界面）。
+观察日志文件<code>~/.config/unityhub/logs/info-log.json</code>只能看到</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{<span style="color:#f92672">&#34;timestamp&#34;</span>:<span style="color:#e6db74">&#34;2025-01-06T12:44:55.453Z&#34;</span>,<span style="color:#f92672">&#34;level&#34;</span>:<span style="color:#e6db74">&#34;info&#34;</span>,<span style="color:#f92672">&#34;moduleName&#34;</span>:<span style="color:#e6db74">&#34;secondAppInstanceBootstrap&#34;</span>,<span style="color:#f92672">&#34;pid&#34;</span>:<span style="color:#ae81ff">21808</span>,<span style="color:#f92672">&#34;message&#34;</span>:<span style="color:#e6db74">&#34;Second instance of the Hub was started. Closing...&#34;</span>}
+</span></span></code></pre></div><p>可以确定浏览器并没有成功把token传递给Unity Hub。</p>
+<h2 id="解决办法">解决办法</h2>
+<blockquote>
+<p>来自<a href="https://aur.archlinux.org/packages/unityhub">AUR</a>评论区 - sticmac commented on 2023-04-08 14:41 (UTC) (edited on 2023-04-08 14:41 (UTC) by sticmac)</p>
+</blockquote>
+<ol>
+<li>在浏览器中“Launching Unity Hub”界面上右键<strong>查看页面源代码</strong>。</li>
+<li>找到<code>&lt;head&gt;</code>中的<code>&lt;meta&gt;</code>标签，复制其中的<code>unityhub://login/?code={你的登录token}</code>。</li>
+<li>打开Terminal,输入命令<code>unityhub &quot;unityhub://login/?code={你的登录token}&quot;</code>来启动Unity Hub。</li>
+</ol>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/unity">Unity</a></li>
+					
+					<li><a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91">游戏开发</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2025  © Hutao_zyf |  Customized Based On <a
+      href="https://github.com/athul/archie" >Archie Theme</a> | Built with <a href="https://gohugo.io" >Hugo</a> | Hosted On <a href="https://github.com" >GitHub</a> | 由<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://114514.zroevn.cn/imgs/%E5%8F%88%E6%8B%8D%E4%BA%91_logo5.webp" width="50" height="25" class="title-img"/></a>提供云存储服务 <p style="text-align: center;" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://midori.fun/">Midori_Blog</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/zyf2007">Hutao_zyf</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:18px!important;margin-left:3px;vertical-align:middle;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:18px!important;margin-left:3px;vertical-align:middle;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+  </div>
+</footer>
+
+
+</div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>游戏开发 on ゲーム開発部</title>
+    <link>https://midori.fun/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 游戏开发 on ゲーム開発部</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Hutao_zyf</copyright>
+    <lastBuildDate>Mon, 06 Jan 2025 20:38:44 +0800</lastBuildDate>
+    <atom:link href="https://midori.fun/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unity Hub无法登录的一种可能的解决办法</title>
+      <link>https://midori.fun/posts/unity_hub_login/</link>
+      <pubDate>Mon, 06 Jan 2025 20:38:44 +0800</pubDate>
+      <guid>https://midori.fun/posts/unity_hub_login/</guid>
+      <description>&lt;h2 id=&#34;症状&#34;&gt;症状&lt;/h2&gt;&#xA;&lt;p&gt;在Unity Hub登录界面按下“Sign in”按钮后，浏览器被唤起，进入“Launching Unity Hub”界面，然后Unity Hub被唤起，但没有动静（还是停留在Welcome to Unity Hub界面）。&#xA;观察日志文件&lt;code&gt;~/.config/unityhub/logs/info-log.json&lt;/code&gt;只能看到&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
