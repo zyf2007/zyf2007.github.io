@@ -1,0 +1,654 @@
+/* 定义全局变量 */
+:root {
+  --maincolor: #F02494;
+  --bordercl: rebeccapurple;
+  --callouctcolor: dodgerblue;
+  --hovercolor: navy;
+  --darkMaincolor: #28F6C7;
+}
+
+/* 基本 HTML 样式 */
+html {
+  color: #232333;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
+body {
+  display: block;
+  margin: 8px;
+}
+
+/* 去除点击高亮效果 */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 选中文字样式 */
+::selection {
+  background: var(--maincolor);
+  color: #fff;
+}
+
+/* 文章段落样式 */
+article p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  text-indent: 2rem;
+}
+
+article blockquote p {
+  text-indent: 0;
+}
+
+article ul,
+dl,
+ol {
+  margin-left: 1rem;
+}
+
+/* 水平线样式 */
+hr {
+  border: 0;
+  border-top: 3px dotted var(--bordercl);
+  margin: 1em 0;
+}
+
+/* 引用块样式 */
+blockquote {
+  border-left: 3px solid var(--bordercl);
+  color: #737373;
+  margin: 0;
+  padding-left: 1em;
+}
+
+blockquote p {
+  position: relative;
+  transform: translateY(6px);
+}
+
+/* 链接样式 */
+a {
+  font-family: Silver, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1rem;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  text-indent: 0;
+  padding-top: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  display: inline-block;
+  border-bottom: 3px solid var(--maincolor);
+}
+
+a:hover {
+  background-color: var(--hovercolor);
+  color: #fff;
+}
+
+/* 网站标题样式 */
+.SiteTitle {
+  font-size: 2.2rem;
+  padding-top: 0;
+}
+
+.title a {
+  padding-top: 13px;
+}
+
+/* 列表样式 */
+ul {
+  list-style: none;
+  padding-left: 2ch;
+}
+
+/* 通用文本样式 */
+.description,
+.meta,
+.tldr,
+.text,
+label,
+li,
+p,
+td,
+th,
+time {
+  font-family: Silver, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  width: auto;
+  letter-spacing: .12px;
+}
+
+li p {
+  text-indent: 0;
+}
+
+.meta {
+  color: #999;
+}
+
+strong {
+  letter-spacing: 1px;
+}
+
+ul > li::before {
+  content: '* ';
+  font-weight: 700;
+}
+
+ul li a {
+  transform: translateY(-2px);
+}
+
+/* 图片样式 */
+img {
+  border: 3px solid #ececec;
+  max-width: 100%;
+}
+
+.title-img {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 5px;
+}
+
+/* 图片容器样式 */
+figure {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+}
+
+figure img {
+  max-height: 500px;
+}
+
+@media screen and (min-width: 600px) {
+  figure {
+    padding: 0 40px;
+  }
+}
+
+figure h4 {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+figure h4::before {
+  content: '↳ ';
+}
+
+/* 标题样式 */
+h1 a {
+  line-height: 1.7rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Silver, sans-serif;
+  font-size: 2rem;
+  margin-top: 2.4rem;
+  margin-bottom: .1rem;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+}
+
+h1::before {
+  color: var(--maincolor);
+  content: '# ';
+  font-size: 2.4rem;
+}
+
+h2::before {
+  color: var(--maincolor);
+  content: '## ';
+}
+
+h3::before {
+  color: var(--maincolor);
+  content: '### ';
+}
+
+h4::before {
+  color: var(--maincolor);
+  content: '#### ';
+}
+
+h5::before {
+  color: var(--maincolor);
+  content: '##### ';
+}
+
+h6::before {
+  color: var(--maincolor);
+  content: '###### ';
+}
+
+h1 a {
+  font-size: 2.4rem;
+}
+
+.body h1 {
+  font-size: 2.8rem;
+}
+
+.description h1 {
+  font-size: 2rem;
+}
+
+/* 目录样式 */
+.toc {
+  background-color: #ececec;
+  color: #232333;
+  padding: 20px;
+  padding-bottom: 0;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* 页脚样式 */
+footer {
+  display: flex;
+  align-items: center;
+  border-top: .4rem dotted var(--bordercl);
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.soc {
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+}
+
+.border {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  border: 1px solid;
+}
+
+.footer-info {
+  font-family: Silver, sans-serif;
+  font-size: 1.5rem;
+  padding: var(--footer-padding);
+  position: relative;
+  transform: translateY(4px);
+}
+
+.title h1 {
+  margin-bottom: 0;
+  font-size: 3.5rem;
+}
+
+time {
+  color: grey;
+}
+
+article .title {
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+
+/* 提示框样式 */
+.callout {
+  background-color: var(--callouctcolor);
+  color: #fff;
+  padding: 1em;
+}
+
+.callout p {
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+}
+
+.callout a {
+  border-bottom: 3px solid #fff;
+}
+
+.callout a:hover {
+  background-color: #fff;
+  color: var(--callouctcolor);
+}
+
+/* 网站描述样式 */
+.site-description p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+/* 标签样式 */
+.tags li::before {
+  content: "🏷 ";
+}
+
+.tags a {
+  border-bottom: 3px solid var(--maincolor);
+}
+
+.tags a:hover {
+  color: #fff;
+  background-color: var(--hovercolor);
+}
+
+/* SVG 图标样式 */
+svg {
+  max-height: 15px;
+}
+
+.soc:hover {
+  color: #fff;
+}
+
+/* 草稿标签样式 */
+.draft-label {
+  color: var(--bordercl);
+  text-decoration: none;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-left: 6px;
+  background-color: #f9f2f4;
+}
+
+/* 代码高亮样式 */
+.highlight {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.highlight pre code[class*=language-] {
+  -webkit-overflow-scrolling: touch;
+}
+
+.highlight pre code[class*=language-]::before {
+  background: #000;
+  border-radius: 0 0 .25rem .25rem;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: .025rem;
+  padding: .1rem .5rem;
+  position: absolute;
+  right: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0;
+}
+
+.highlight pre code[class=language-javaScript]::before,
+.highlight pre code[class=language-js]::before {
+  content: "js";
+  background: #f7df1e;
+  color: #000;
+}
+
+.highlight pre code[class*=language-yaml]::before,
+.highlight pre code[class*=language-yml]::before {
+  content: 'yaml';
+  background: #f71e6a;
+  color: #fff;
+}
+
+.highlight pre code[class*=language-bash]::before,
+.highlight pre code[class*=language-sh]::before,
+.highlight pre code[class*=language-shell]::before {
+  content: 'shell';
+  background: green;
+  color: #fff;
+}
+
+.highlight pre code[class*=language-json]::before {
+  content: 'json';
+  background: #1e90ff;
+  color: #000;
+}
+
+.highlight pre code[class*=language-py]::before,
+.highlight pre code[class*=language-python]::before {
+  content: 'py';
+  background: #00f;
+  color: #ff0;
+}
+
+.highlight pre code[class*=language-css]::before {
+  content: 'css';
+  background: #0ff;
+  color: #000;
+}
+
+.highlight pre code[class*=language-go]::before {
+  content: 'Go';
+  background: #0ff;
+  color: #4169e1;
+}
+
+.highlight pre code[class*=language-md]::before {
+  content: 'Markdown';
+  background: #4169e1;
+  color: #f5f5f5;
+}
+
+/* 表格样式 */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+  font-size: 2rem;
+}
+
+table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+/* 代码块样式 */
+code {
+  background-color: #ececec;
+  padding: .1em .2em;
+  font-family: Code, sans-serif;
+  font-size: 1rem;
+}
+
+pre {
+  background-color: #ececec;
+  line-height: 1.4;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+.highlight pre ::selection {
+  background: rgba(255, 255, 255, .2);
+  color: inherit;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* 内容区域样式 */
+.content {
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  max-width: 800px;
+  padding-left: 1ch;
+  word-wrap: break-word;
+}
+
+/* 头部样式 */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1em 0;
+  line-height: 2.5em;
+}
+
+header .main {
+  font-size: 1.5rem;
+}
+
+/* 新增 input 样式 */
+input {
+  font-family: Silver, sans-serif;
+  font-size: 1.6rem;
+  padding: 5px 10px;
+  border: 3px solid var(--maincolor);
+  border-radius: 0;
+  background-color: transparent;
+  color: #232333;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--hovercolor);
+  background-color: var(--hovercolor);
+  color: #fff;
+}
+
+/* 定义 range 输入框的样式 */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none; /* 确保移除可能的边框 */
+}
+
+/* 针对 WebKit 内核浏览器（如 Chrome、Safari）的轨道样式 */
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    background: var(--maincolor);
+    border: none;
+    border-radius: 4px;
+    max-width: 200px;
+}
+
+/* 针对 WebKit 内核浏览器（如 Chrome、Safari）的滑块样式 */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--hovercolor);
+    border: 3px solid var(--maincolor);
+    border-radius: 50%;
+    margin-top: -6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* 鼠标悬停在滑块上时的样式 */
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #fff;
+}
+
+/* 针对 Firefox 浏览器的轨道样式 */
+input[type="range"]::-moz-range-track {
+    height: 8px;
+    background: var(--maincolor);
+    border: none;
+    border-radius: 4px;
+}
+
+/* 针对 Firefox 浏览器的滑块样式 */
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--hovercolor);
+    border: 3px solid var(--maincolor);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* 鼠标悬停在滑块上时的样式（Firefox） */
+input[type="range"]::-moz-range-thumb:hover {
+    background: #fff;
+}
+
+/* 针对 Microsoft Edge 浏览器的轨道样式 */
+input[type="range"]::-ms-track {
+    height: 8px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+/* 针对 Microsoft Edge 浏览器的轨道填充样式 */
+input[type="range"]::-ms-fill-lower {
+    background: var(--maincolor);
+    border: none;
+    border-radius: 4px;
+}
+
+/* 针对 Microsoft Edge 浏览器的轨道上半部分填充样式 */
+input[type="range"]::-ms-fill-upper {
+    background: var(--maincolor);
+    border: none;
+    border-radius: 4px;
+}
+
+/* 针对 Microsoft Edge 浏览器的滑块样式 */
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--hovercolor);
+    border: 3px solid var(--maincolor);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* 鼠标悬停在滑块上时的样式（Microsoft Edge） */
+input[type="range"]::-ms-thumb:hover {
+    background: #fff;
+}
+
+/* 去除聚焦时的默认边框 */
+input[type="range"]{
+    outline: none;
+    border: none; /* 确保移除聚焦时可能的边框 */
+}
+
+.container {
+  display: flex;
+  align-items: last baseline;
+  max-width: 1000px;
+  padding: 10px;
+  flex-wrap: nowrap;
+}
+.text {
+  white-space: nowrap;
+}

@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Hutao_zyf</copyright>
-    <lastBuildDate>Mon, 16 Sep 2024 11:54:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 10 May 2025 17:39:15 +0800</lastBuildDate>
     <atom:link href="https://midori.fun/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解决 “Error in decoration provider line (ns=nvim.treesitter.highlighter)” 错误：让Neovim与LunarVim版本统一</title>
+      <link>https://midori.fun/posts/lunarvim_version_error/</link>
+      <pubDate>Sat, 10 May 2025 17:39:15 +0800</pubDate>
+      <guid>https://midori.fun/posts/lunarvim_version_error/</guid>
+      <description>&lt;h2 id=&#34;问题背景&#34;&gt;问题背景&lt;/h2&gt;&#xA;&lt;p&gt;最近在使用 LunarVim 时遇到了一个棘手的问题：每次打开文件都会出现 Error in decoration provider &amp;ldquo;line&amp;rdquo; (ns=nvim.treesitter.highlighter) 的错误提示。经过一番排查，发现问题源于 Neovim 版本与插件之间的兼容性问题。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>使用 Deskop Entry 扩展 KDE6 的 Dolphin 右键菜单</title>
       <link>https://midori.fun/posts/kde_service_menus/</link>
